@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    padding: 0px 70px;
+    margin: 0px auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 70px;
+    position: sticky;
+    top: 0;
+    background-color: #ffff;
+    box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.nav-link {
+    margin: 0px 20px;
+
+}
+
+.login-btn {
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+.sign-btn {
+    border: none;
+    background-color: #E94339;
+    border-radius: 25px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* hero-section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+
+.hero-img {
+    width: 400px;
+    height: auto;
+    border-radius: 25px;
+    animation: hero-img-animation 8s ease 0s infinite reverse none;
+}
+
+.hero-section-left h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 61px;
+}
+
+.hero-section-left p {
+    font-family: "Inter", sans-serif;
+    font-weight: auto;
+    font-size: 18px;
+}
+
+.order-now {
+    position: relative;
+    margin: 20px 0px;
+}
+
+.order-now input {
+    width: 460px;
+    height: 42px;
+    border-radius: 50px;
+    border: none;
+    background-color: #f6f6f6;
+}
+
+.order-now input[type="text"] {
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+
+.order-now input:focus {
+    outline: none;
+}
+
+.order-now button {
+    position: absolute;
+    border: none;
+    border-radius: 50px;
+    background-color: #E94339;
+    color: #ffff;
+    padding: 10px 16px;
+    left: 68%;
+    top: 3px;
+}
+
+.download-btns {
+    display: flex;
+}
+
+.btn-app-store {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    margin: 0px 20px 0px 0px;
+    font-family: "Inter", sans-serif;
+}
+
+.app-store {
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.download-text {
+    margin-left: 10px;
+}
+
+/* order-section */
+
+.order-numbers {
+    text-align: center;
+    margin: 65px 0px 15px;
+}
+
+.order-numbers h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.order-numbers h1 span {
+    color: #ff5331;
+}
+
+.order-numbers p {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    color: black;
+}
+
+/* card-section */
+
+.order-foods-card {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.food-itmes-card{
+    display: flex;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    border-radius: 28px;
+    padding: 50px;
+    width: 90px;
+    margin: 0px 20px;
+}
+
+.card:hover{
+ cursor: pointer;
+ scale: 1.1;
+ box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.2);
+ transform: translateY(-10px);
+}
+
+.card span{
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+}
+.card-food-item{
+    background-color: white;
+    border-radius: 50px;
+    padding: 14px;
+}
+.card .bg-squre{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 0px;
+}
+.delivery-card{
+    background-color: #FAFAFA;
+    border-radius: 28px;
+    padding: 40px; 
+}
+
+.delivery-card h3{
+    font-size: 25.8;
+    font-family:"Inter", sans-serif ;
+}
+.deal{
+    color: #ff5331;
+}
+.delivery{
+    color: #009B00;
+}
+.delivery-bike{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Animation */
+@keyframes hero-img-animation {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateY(-8px);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: translateY(8px);
+    }
+  
+    80% {
+      transform: translateY(6.4px);
+    }
+  
+    90% {
+      transform: translateY(-6.4px);
+    }
+  }
+
+/* second-food-itmes */
+
+.second-food-itmes{
+    display: flex;
+    margin: 25px 0px;
+}
+.para-about-items{
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 24;
+}
+
+.how-order-card{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+
+.how-order-1{
+    position: absolute;
+    width: 300px;
+    height: auto;
+}
+.how-order-1 span{
+    color: #ff5331;
+}
+ .how-order-2{
+    position: absolute;
+    left: -30%;
+    width: 300px;
+    height: auto;
+    bottom: 89%;
+    
+ }
+ .how-order-2 span{
+    color: #ff5331;
+}
+ .how-order-3{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 56%;
+ }
+ .how-order-3 span{
+    color: #ff5331;
+}
+ .how-order-4{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left:77% ;
+ }
+ .how-order-4 span{
+    color: #ff5331;
+}
+
+.order-1{
+    position: relative;
+    left: -9%;
+    top: 9%;
+}
+
+.order-2{
+    position: relative;
+    left: -50%;
+    top: 10%;
+    bottom: 14%;
+    margin-top: 14px; 
+   
+}
+.order-3{
+    position: relative;
+    left: -11%;
+    top: 7%;
+    margin-top: -19px;
+}
+.order-4{
+    position: relative;
+    left: -12%;
+    top: 8%;
+    margin-top: 2.5%;
+}
+
+.location-card{
+    margin-left: 5%;
+}
+.chosing-card{
+    position: absolute;
+    left: 39%;
+    top: 191%;
+}
+
+.order-card{
+    position: absolute;
+    right: 45%;
+}
+.way-card{
+    margin-left: 4%;
+}
+
+/* clients Feedback */
+
+.client-feedback-section{
+    text-align: center;
+    margin: 100px 0px;
+}
+
+.client-Feedback h1{
+    font-family:"Inter", sans-serif ;
+    font-weight: 700;
+    color: #111111;
+}
+.client-Feedback p{
+    font-family:"Inter", sans-serif ;
+    font-weight: 400;
+    font-size: 16px;
+    color: #111111;
+    padding: 10px 0px;
+}
+.about-site img{
+    width: 50px;
+    padding: 10px 0px;
+}
+.about-site p{
+    font-family:"Inter", sans-serif ;
+    font-weight: 500;
+    font-size: 18px;
+    color: #111111;
+    font-style: italic;
+}
+
+.about-ceo{
+    margin: 10px 0px;
+}
+.about-ceo h1{
+    font-family:"Inter", sans-serif ;
+    font-weight: 600;
+    font-size: 18px;
+    color: #111111;
+}
+
+.about-ceo p{
+    font-family:"Inter", sans-serif ;
+    font-weight: 400;
+    font-size: 14px;
+    color: #111111;
+}
+.arrow-btns button{
+    border: none;
+    border-radius: 44px;
+    background-color: #fff;
+    width: 36px;
+    height: 36px
+}
+/* subscribe-newsletter */
+
+.browse-resturants{
+    display: flex;
+    justify-content: center;
+    width: Fixed (1,612px)px;
+    height: Hug (302px)px;
+    top: 3108px;
+    padding: 103px 91px 103px 91px;
+    gap: 8px;
+    opacity: 0px;
+    background-color: #FFEFEC;
+    ;
+
+}
+.subscribe-newsletter{
+    margin-right: 70px;
+    
+}
+.subscribe-newsletter h1{
+    font-family:"Inter", sans-serif ;
+    font-weight: 600;
+    font-size: 46px;
+    color: #111111; 
+}
+.subscribe-newsletter p{
+    font-family:"Inter", sans-serif ;
+    font-weight: 400;
+    font-size: 16px;
+    color: #111111; 
+}
+
+.order-now-2 {
+    position: relative;
+    margin: 20px 0px;
+}
+
+.order-now-2 input {
+    width: 460px;
+    height: 42px;
+    border-radius: 50px;
+    border: none;
+    background-color: #f6f6f6;
+}
+
+.order-now-2 input[type="text"] {
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+
+.order-now-2 input:focus {
+    outline: none;
+}
+
+.order-now button {
+    position: absolute;
+    border: none;
+    border-radius: 50px;
+    background-color: #E94339;
+    color: #ffff;
+    padding: 10px 16px;
+    left: 79%;
+    top: 3px;
+}
+
+.order-now-button-2{
+    position: absolute;
+    border: none;
+    border-radius: 50px;
+    background-color: #E94339;
+    color: #ffff;
+    padding: 10px 16px;
+    left: 4%;
+    top: 3px;
+}
+ 
+/* footer section */
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: #111111;
+}
+
+.pizza-slice{
+    margin: 80px 0px;
+}
+.pizza-reserved{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    color: #B5B2B2;
+}
+.links-lists{
+    margin: 50px 50px;
+}
+
+.link-list{
+    margin: 8px 5px;
+    color: #B5B2B2;
+    list-style-type: none;
+    padding: 5px 0px ;
+}
+
+.list-section{
+    display: flex;
+    margin-top: 28px;
+  }
+  
+.heading-data{
+    font-family:"Inter", sans-serif ;
+    border: none;
+    color: #ffff;
+    list-style-type: none;
+    padding: 5px 12px ;
+    padding: 5px; 
+
+}
+
+.news-link{
+    margin: 8px 5px;
+    color: #B5B2B2;
+    list-style-type: none;
+    padding: 5px 0px ;
+}
+.terms-confitions-sec{
+    margin-top: 513px;
+    position: absolute;
+    left: 70%;
+    top: 358%;
+    font-family:"Inter", sans-serif ;
+    
+}
+.terms-confitions-sec ul{
+    display: flex;
+    color: #B5B2B2;
+    list-style-type: none;
+    
+}
+
+.terms-confitions-sec ul li{
+    padding:0px 10px;
+}
